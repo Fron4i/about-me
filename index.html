@@ -156,8 +156,15 @@
     }
 
     /* Стили для параграфов с технологиями */
+    .tech-display {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      align-items: stretch;
+    }
+
     .tech-display .tech-images {
-      display: inline-flex;
+      display: flex;
       flex-wrap: wrap;
       gap: 5px;
       align-items: stretch;
@@ -233,6 +240,12 @@
 
       .tech-display .tech-text {
         display: inline !important;
+        margin: 0 !important;
+        padding: 0 !important;
+      }
+
+      .tech-display {
+        display: block !important;
       }
 
       li.tech-images {
