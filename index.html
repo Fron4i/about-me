@@ -165,7 +165,7 @@
 
     .tech-display .tech-images {
       display: flex;
-      flex-wrap: wrap;
+      flex-wrap: nowrap;
       gap: 5px;
       align-items: stretch;
     }
@@ -186,13 +186,13 @@
     li.tech-text {
       display: none;
     }
-    
+
     /* Одинаковая высота для всех изображений */
     li img {
       height: 28px;
       transition: transform 0.2s ease;
     }
-    
+
     li img:hover {
       transform: scale(1.05);
     }
@@ -313,19 +313,7 @@
       img {
         display: none !important;
       }
-      
-      /* Добавляем текст технологий для каждого блока */
-      p:nth-of-type(6)::after {
-        content: "JavaScript, Vue, Node.js, PHP, WordPress, Docker, Nginx";
-      }
-      
-      p:nth-of-type(12)::after {
-        content: "Python, JavaScript, Node.js, PHP, WordPress, Docker, Nginx";
-      }
-      
-      p:nth-of-type(16)::after {
-        content: "JavaScript, React, Vue, Python, Node.js, PHP, WordPress, Telegram, PostgreSQL, Docker, Nginx";
-      }
+
 
       /* Simple print styles for tech paragraphs */
       p {
@@ -394,104 +382,143 @@
   <button class="theme-toggle" onclick="toggleTheme()" id="theme-toggle">☀️</button>
   <h1>Илья Фомич</h1>
 
-<ul>
-<li>Почта: <code>fomich.il@mail.ru</code> | <a href="https://t.me/iwebix_man">Telegram</a></li>
-</ul>
+  <ul>
+    <li>Почта: <code>fomich.il@mail.ru</code> | <a href="https://t.me/iwebix_man">Telegram</a></li>
+  </ul>
 
-<p><strong><em>Делаю дело, пока другие разыгрывают трагизм</em></strong></p>
+  <p><strong><em>Делаю дело, пока другие разыгрывают трагизм</em></strong></p>
 
-<h2><strong>Краткое резюме</strong></h2>
+  <h2><strong>Краткое резюме</strong></h2>
 
-<p>Fullstack-разработчик с 4+ годами опыта создания веб-сайтов, Telegram-ботов и веб-приложений. Полный цикл разработки: от составления тз до деплоя на сервер.</p>
+  <p>Fullstack-разработчик с 4+ годами опыта создания веб-сайтов, Telegram-ботов и веб-приложений. Полный цикл
+    разработки: от составления тз до деплоя на сервер.</p>
 
-<p><strong>Основные технологии:</strong> PHP, JavaScript, Python, Node.js, React, Vue.js, HTML5/SCSS, PostgreSQL, WordPress, Docker, Linux</p>
+  <p><strong>Основные технологии:</strong> PHP, JavaScript, Python, Node.js, React, Vue.js, HTML5/SCSS, PostgreSQL,
+    WordPress, Docker, Linux</p>
 
-<h2><strong>Опыт работы</strong></h2>
+  <h2><strong>Опыт работы</strong></h2>
 
-<h3>Fullstack Developer • Карпов и Партнеры</h3>
+  <h3>Fullstack Developer • Карпов и Партнеры</h3>
 
-<p><strong>Сентябрь 2023 – Июль 2025</strong></p>
+  <p><strong>Сентябрь 2023 – Июль 2025</strong></p>
 
-<p class="tech-display"><strong>Технологии:</strong> <span class="tech-images"><a href="https://javascript.info/"><img src="images/javascript.svg" alt="JavaScript"></a> | <a href="https://vuejs.org/"><img src="images/vue.svg" alt="Vue"></a> | <a href="https://nodejs.org/"><img src="images/nodejs.svg" alt="Node.js"></a> | <a href="https://php.net/"><img src="images/php.svg" alt="PHP"></a> | <a href="https://wordpress.org/"><img src="images/wordpress.svg" alt="WordPress"></a> | <a href="https://docker.com/"><img src="images/docker.svg" alt="Docker"></a> | <a href="https://nginx.org/"><img src="images/nginx.svg" alt="Nginx"></a></span><span class="tech-text">JavaScript, Vue, Node.js, PHP, WordPress, Docker, Nginx</span></p>
+  <p class="tech-display"><strong>Технологии:</strong> <span class="tech-images"><a href="https://javascript.info/"><img
+          src="images/javascript.svg" alt="JavaScript"></a> | <a href="https://vuejs.org/"><img src="images/vue.svg"
+          alt="Vue"></a> | <a href="https://nodejs.org/"><img src="images/nodejs.svg" alt="Node.js"></a> | <a
+        href="https://php.net/"><img src="images/php.svg" alt="PHP"></a> | <a href="https://wordpress.org/"><img
+          src="images/wordpress.svg" alt="WordPress"></a> | <a href="https://docker.com/"><img src="images/docker.svg"
+          alt="Docker"></a> | <a href="https://nginx.org/"><img src="images/nginx.svg" alt="Nginx"></a></span><span
+      class="tech-text">JavaScript, Vue, Node.js, PHP, WordPress, Docker, Nginx</span></p>
 
-<p><strong>Опыт и ключевые достижения:</strong></p>
+  <p><strong>Опыт и ключевые достижения:</strong></p>
 
-<ul>
-<li>Спроектировал и реализовал корпоративный портал с нуля, увеличив онлайн-заявки на 30% за первый квартал</li>
-<li>Разработал высокопроизводительную WordPress-тему ускорив загрузку на 65%</li>
-<li>Разработал REST API на PHP и Node.js для интеграции с внутренней CRM, ускорив время ответа API на 40%</li>
-<li>Разрабатывал и оптимизировал сценарии автоматизации с использованием ИИ в n8n</li>
-<li>Внедрил систему многоуровневого контроля доступа, что снизило ошибки при управлении контентом на 90%</li>
-<li>Создал frontend-модули (калькуляторы, динамические формы, визуальные структуры) для корпоративного портала клиентов на Bitrix24</li>
-<li>Настроил и поддерживал серверную инфраструктуру (Ubuntu VPS, Nginx, SSL, резервные копии) с uptime 99.99%</li>
-</ul>
+  <ul>
+    <li>Спроектировал и реализовал корпоративный портал с нуля, увеличив онлайн-заявки на 30% за первый квартал</li>
+    <li>Разработал высокопроизводительную WordPress-тему ускорив загрузку на 65%</li>
+    <li>Разработал REST API на PHP и Node.js для интеграции с внутренней CRM, ускорив время ответа API на 40%</li>
+    <li>Разрабатывал и оптимизировал сценарии автоматизации с использованием ИИ в n8n</li>
+    <li>Внедрил систему многоуровневого контроля доступа, что снизило ошибки при управлении контентом на 90%</li>
+    <li>Создал frontend-модули (калькуляторы, динамические формы, визуальные структуры) для корпоративного портала
+      клиентов на Bitrix24</li>
+    <li>Настроил и поддерживал серверную инфраструктуру (Ubuntu VPS, Nginx, SSL, резервные копии) с uptime 99.99%</li>
+  </ul>
 
-<hr />
+  <hr />
 
-<h3>Fullstack Developer • ITPelag</h3>
+  <h3>Fullstack Developer • ITPelag</h3>
 
-<p><strong>Декабрь 2022 – Сентябрь 2023</strong></p>
+  <p><strong>Декабрь 2022 – Сентябрь 2023</strong></p>
 
-<p class="tech-display"><strong>Технологии:</strong> <span class="tech-images"><a href="https://python.org/"><img src="images/python.svg" alt="Python"></a> | <a href="https://javascript.info/"><img src="images/javascript.svg" alt="JavaScript"></a> | <a href="https://nodejs.org/"><img src="images/nodejs.svg" alt="Node.js"></a> | <a href="https://php.net/"><img src="images/php.svg" alt="PHP"></a> | <a href="https://wordpress.org/"><img src="images/wordpress.svg" alt="WordPress"></a> | <a href="https://docker.com/"><img src="images/docker.svg" alt="Docker"></a> | <a href="https://nginx.org/"><img src="images/nginx.svg" alt="Nginx"></a></span><span class="tech-text">Python, JavaScript, Node.js, PHP, WordPress, Docker, Nginx</span></p>
+  <p class="tech-display"><strong>Технологии:</strong> <span class="tech-images"><a href="https://python.org/"><img
+          src="images/python.svg" alt="Python"></a> | <a href="https://javascript.info/"><img
+          src="images/javascript.svg" alt="JavaScript"></a> | <a href="https://nodejs.org/"><img src="images/nodejs.svg"
+          alt="Node.js"></a> | <a href="https://php.net/"><img src="images/php.svg" alt="PHP"></a> | <a
+        href="https://wordpress.org/"><img src="images/wordpress.svg" alt="WordPress"></a> | <a
+        href="https://docker.com/"><img src="images/docker.svg" alt="Docker"></a> | <a href="https://nginx.org/"><img
+          src="images/nginx.svg" alt="Nginx"></a></span><span class="tech-text">Python, JavaScript, Node.js, PHP,
+      WordPress, Docker, Nginx</span></p>
 
-<p><strong>Проекты:</strong> Разработка продуктов для автоматизации и заработка в криптосфере</p>
+  <p><strong>Проекты:</strong> Разработка продуктов для автоматизации и заработка в криптосфере</p>
 
-<ul>
-<li>Разработал и поддерживал веб-интерфейс портала для автоматизированного заработка на Telegram-играх</li>
-<li>Автоматизировал процессы аналитики и отчетности по активности пользователей и транзакциям, ускорив формирование отчетов на 80%</li>
-<li>Создал REST API для интеграции с Telegram-ботами и CRM</li>
-<li>Реализовал job queue (очередь фоновых задач) с повторными попытками и skip locked, что ускорило выполнения задач на 20%</li>
-<li>Внедрил систему логирования и мониторинга для отслеживания неэффективных экземпляров воркеров</li>
-<li>Разработал парсеры для сбора и анализа данных с криптовалютных площадок, увеличив полноту данных на 45%</li>
-</ul>
+  <ul>
+    <li>Разработал и поддерживал веб-интерфейс портала для автоматизированного заработка на Telegram-играх</li>
+    <li>Автоматизировал процессы аналитики и отчетности по активности пользователей и транзакциям, ускорив формирование
+      отчетов на 80%</li>
+    <li>Создал REST API для интеграции с Telegram-ботами и CRM</li>
+    <li>Реализовал job queue (очередь фоновых задач) с повторными попытками и skip locked, что ускорило выполнения задач
+      на 20%</li>
+    <li>Внедрил систему логирования и мониторинга для отслеживания неэффективных экземпляров воркеров</li>
+    <li>Разработал парсеры для сбора и анализа данных с криптовалютных площадок, увеличив полноту данных на 45%</li>
+  </ul>
 
-<hr />
+  <hr />
 
-<h3>Fullstack Developer • Дополнительные проекты</h3>
+  <h3>Fullstack Developer • Дополнительные проекты</h3>
 
-<p class="tech-display"><strong>Технологии:</strong> <span class="tech-images"><a href="https://javascript.info/"><img src="images/javascript.svg" alt="JavaScript"></a> | <a href="https://react.dev/"><img src="images/react.svg" alt="React"></a> | <a href="https://vuejs.org/"><img src="images/vue.svg" alt="Vue"></a> | <a href="https://python.org/"><img src="images/python.svg" alt="Python"></a> | <a href="https://nodejs.org/"><img src="images/nodejs.svg" alt="Node.js"></a> | <a href="https://php.net/"><img src="images/php.svg" alt="PHP"></a> | <a href="https://wordpress.org/"><img src="images/wordpress.svg" alt="WordPress"></a> | <a href="https://docker.com/"><img src="images/docker.svg" alt="Docker"></a> | <a href="https://nginx.org/"><img src="images/nginx.svg" alt="Nginx"></a> | <a href="https://postgresql.org/"><img src="images/postgresql.svg" alt="PostgreSQL"></a> | <a href="https://telegram.org/"><img src="images/telegram.svg" alt="Telegram"></a></span><span class="tech-text">JavaScript, React, Vue, Python, Node.js, PHP, WordPress, Docker, Nginx, PostgreSQL, Telegram</span></p>
+  <p class="tech-display"><strong>Технологии:</strong> <span class="tech-images"><a href="https://javascript.info/"><img
+          src="images/javascript.svg" alt="JavaScript"></a> | <a href="https://react.dev/"><img src="images/react.svg"
+          alt="React"></a> | <a href="https://vuejs.org/"><img src="images/vue.svg" alt="Vue"></a> | <a
+        href="https://python.org/"><img src="images/python.svg" alt="Python"></a> | <a href="https://nodejs.org/"><img
+          src="images/nodejs.svg" alt="Node.js"></a> | <a href="https://php.net/"><img src="images/php.svg"
+          alt="PHP"></a> | <a href="https://wordpress.org/"><img src="images/wordpress.svg" alt="WordPress"></a> | <a
+        href="https://docker.com/"><img src="images/docker.svg" alt="Docker"></a> | <a href="https://nginx.org/"><img
+          src="images/nginx.svg" alt="Nginx"></a> | <a href="https://postgresql.org/"><img src="images/postgresql.svg"
+          alt="PostgreSQL"></a> | <a href="https://telegram.org/"><img src="images/telegram.svg"
+          alt="Telegram"></a></span><span class="tech-text">JavaScript, React, Vue, Python, Node.js, PHP, WordPress,
+      Docker, Nginx, PostgreSQL, Telegram</span></p>
 
-<p><strong>Проекты:</strong> Полный спектр веб-разработки и автоматизации для клиентов</p>
+  <p><strong>Проекты:</strong> Полный спектр веб-разработки и автоматизации для клиентов</p>
 
-<ul>
-<li>Реализовал 10+ лендингов и корпоративных сайтов с адаптивной версткой и уникальным дизайном</li>
-<li>Разработал Telegram-бота для автоматизации бизнеса с интеграцией платежных систем, CRM и бронирования</li>
-<li>Создал веб-версию парсера автомобильных площадок для сравнения цен</li>
-<li>Создал систему Wi-Fi авторизации через Telegram с интеграцией MikroTik RouterOS</li>
-</ul>
+  <ul>
+    <li>Реализовал 10+ лендингов и корпоративных сайтов с адаптивной версткой и уникальным дизайном</li>
+    <li>Разработал Telegram-бота для автоматизации бизнеса с интеграцией платежных систем, CRM и бронирования</li>
+    <li>Создал веб-версию парсера автомобильных площадок для сравнения цен</li>
+    <li>Создал систему Wi-Fi авторизации через Telegram с интеграцией MikroTik RouterOS</li>
+  </ul>
 
-<hr />
+  <hr />
 
-<h2><strong>Ключевые навыки</strong></h2>
+  <h2><strong>Ключевые навыки</strong></h2>
 
-<h3>Frontend</h3>
+  <h3>Frontend</h3>
 
-<ul>
-<li class="tech-images"><a href="https://javascript.info/"><img src="images/javascript.svg" alt="JavaScript"></a> | <a href="https://react.dev/"><img src="images/react.svg" alt="React"></a> | <a href="https://vuejs.org/"><img src="images/vue.svg" alt="Vue.js"></a></li>
-<li class="tech-text">JavaScript, React, Vue.js</li>
-<li class="tech-images"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML"><img src="images/html5.svg" alt="HTML5"></a> | <a href="https://sass-lang.com/"><img src="images/sass.svg" alt="Sass/SCSS"></a></li>
-<li class="tech-text">HTML5, Sass/SCSS</li>
-</ul>
+  <ul>
+    <li class="tech-images"><a href="https://javascript.info/"><img src="images/javascript.svg" alt="JavaScript"></a> |
+      <a href="https://react.dev/"><img src="images/react.svg" alt="React"></a> | <a href="https://vuejs.org/"><img
+          src="images/vue.svg" alt="Vue.js"></a></li>
+    <li class="tech-text">JavaScript, React, Vue.js</li>
+    <li class="tech-images"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML"><img src="images/html5.svg"
+          alt="HTML5"></a> | <a href="https://sass-lang.com/"><img src="images/sass.svg" alt="Sass/SCSS"></a></li>
+    <li class="tech-text">HTML5, Sass/SCSS</li>
+  </ul>
 
-<h3>Backend</h3>
+  <h3>Backend</h3>
 
-<ul>
-<li class="tech-images"><a href="https://php.net/"><img src="images/php.svg" alt="PHP"></a> | <a href="https://nodejs.org/"><img src="images/nodejs.svg" alt="Node.js"></a> | <a href="https://python.org/"><img src="images/python.svg" alt="Python"></a></li>
-<li class="tech-text">PHP, Node.js, Python</li>
-<li class="tech-images"><a href="https://wordpress.org/"><img src="images/wordpress.svg" alt="WordPress"></a> | <a href="https://dev.1c-bitrix.ru/"><img src="images/bitrix.svg" alt="Bitrix Framework"></a> | <a href="https://core.telegram.org/bots/api"><img src="images/telegram.svg" alt="Telegram Bot API"></a></li>
-<li class="tech-text">WordPress, Bitrix Framework, Telegram Bot API</li>
-<li class="tech-images"><a href="https://postgresql.org/"><img src="images/postgresql.svg" alt="PostgreSQL"></a> | <a href="https://mysql.com/"><img src="images/mysql.svg" alt="MySQL"></a></li>
-<li class="tech-text">PostgreSQL, MySQL</li>
-</ul>
+  <ul>
+    <li class="tech-images"><a href="https://php.net/"><img src="images/php.svg" alt="PHP"></a> | <a
+        href="https://nodejs.org/"><img src="images/nodejs.svg" alt="Node.js"></a> | <a href="https://python.org/"><img
+          src="images/python.svg" alt="Python"></a></li>
+    <li class="tech-text">PHP, Node.js, Python</li>
+    <li class="tech-images"><a href="https://wordpress.org/"><img src="images/wordpress.svg" alt="WordPress"></a> | <a
+        href="https://dev.1c-bitrix.ru/"><img src="images/bitrix.svg" alt="Bitrix Framework"></a> | <a
+        href="https://core.telegram.org/bots/api"><img src="images/telegram.svg" alt="Telegram Bot API"></a></li>
+    <li class="tech-text">WordPress, Bitrix Framework, Telegram Bot API</li>
+    <li class="tech-images"><a href="https://postgresql.org/"><img src="images/postgresql.svg" alt="PostgreSQL"></a> |
+      <a href="https://mysql.com/"><img src="images/mysql.svg" alt="MySQL"></a></li>
+    <li class="tech-text">PostgreSQL, MySQL</li>
+  </ul>
 
-<h3>DevOps</h3>
+  <h3>DevOps</h3>
 
-<ul>
-<li class="tech-images"><a href="https://kernel.org/"><img src="images/linux.svg" alt="Linux"></a> | <a href="https://docker.com/"><img src="images/docker.svg" alt="Docker"></a> | <a href="https://git-scm.com/"><img src="images/git.svg" alt="Git"></a></li>
-<li class="tech-text">Linux, Docker, Git</li>
-<li class="tech-images"><a href="https://nginx.org/"><img src="images/nginx.svg" alt="Nginx"></a> | <a href="https://httpd.apache.org/"><img src="images/apache.svg" alt="Apache"></a></li>
-<li class="tech-text">Nginx, Apache</li>
-</ul>
+  <ul>
+    <li class="tech-images"><a href="https://kernel.org/"><img src="images/linux.svg" alt="Linux"></a> | <a
+        href="https://docker.com/"><img src="images/docker.svg" alt="Docker"></a> | <a href="https://git-scm.com/"><img
+          src="images/git.svg" alt="Git"></a></li>
+    <li class="tech-text">Linux, Docker, Git</li>
+    <li class="tech-images"><a href="https://nginx.org/"><img src="images/nginx.svg" alt="Nginx"></a> | <a
+        href="https://httpd.apache.org/"><img src="images/apache.svg" alt="Apache"></a></li>
+    <li class="tech-text">Nginx, Apache</li>
+  </ul>
 
 
   <script>
