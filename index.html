@@ -41,9 +41,10 @@
       transition: background-color 0.3s ease, color 0.3s ease;
     }
 
-    .theme-toggle, .print-toggle {
+    .theme-toggle {
       position: fixed;
       top: 20px;
+      right: 20px;
       background: var(--text-color);
       color: var(--bg-color);
       border: none;
@@ -60,15 +61,7 @@
       z-index: 1000;
     }
 
-    .theme-toggle {
-      right: 20px;
-    }
-
-    .print-toggle {
-      right: 80px;
-    }
-
-    .theme-toggle:hover, .print-toggle:hover {
+    .theme-toggle:hover {
       transform: scale(1.1);
     }
 
@@ -226,6 +219,10 @@
         display: none;
       }
 
+      img {
+        display: none !important;
+      }
+
       h1,
       h2,
       h3 {
@@ -362,7 +359,6 @@
     <a href="/ru" class="lang-button" id="ru-btn">RU</a>
   </div> -->
   <button class="theme-toggle" onclick="toggleTheme()" id="theme-toggle">☀️</button>
-  <a href="print.html" class="print-toggle" title="Версия для печати">🖨️</a>
   <h1>Илья Фомич</h1>
 
 <ul>
