@@ -41,9 +41,10 @@
       transition: background-color 0.3s ease, color 0.3s ease;
     }
 
-    .theme-toggle, .print-toggle {
+    .theme-toggle {
       position: fixed;
       top: 20px;
+      right: 20px;
       background: var(--text-color);
       color: var(--bg-color);
       border: none;
@@ -58,18 +59,9 @@
       transition: all 0.3s ease;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
       z-index: 1000;
-      text-decoration: none;
     }
 
-    .theme-toggle {
-      right: 20px;
-    }
-
-    .print-toggle {
-      right: 80px;
-    }
-
-    .theme-toggle:hover, .print-toggle:hover {
+    .theme-toggle:hover {
       transform: scale(1.1);
     }
 
@@ -164,11 +156,15 @@
     }
 
     /* Стили для параграфов с технологиями */
-    p:has(img[src*="images/"]) {
+    .tech-images {
       display: flex;
       flex-wrap: wrap;
       gap: 5px;
       align-items: stretch;
+    }
+
+    .tech-text {
+      display: none;
     }
 
     /* Выравнивание элементов списка с изображениями в навыках */
@@ -225,6 +221,14 @@
       .theme-toggle,
       .language-switcher {
         display: none;
+      }
+
+      .tech-images {
+        display: none !important;
+      }
+
+      .tech-text {
+        display: block !important;
       }
 
       h1,
@@ -363,7 +367,6 @@
     <a href="/ru" class="lang-button" id="ru-btn">RU</a>
   </div> -->
   <button class="theme-toggle" onclick="toggleTheme()" id="theme-toggle">☀️</button>
-  <a href="print.html" class="print-toggle" title="Версия для печати">🖨️</a>
   <h1>Илья Фомич</h1>
 
 <ul>
@@ -384,7 +387,8 @@
 
 <p><strong>Сентябрь 2023 – Июль 2025</strong></p>
 
-<p><strong>Технологии:</strong> <a href="https://javascript.info/"><img src="images/javascript.svg" alt="JavaScript"></a> | <a href="https://vuejs.org/"><img src="images/vue.svg" alt="Vue"></a> | <a href="https://nodejs.org/"><img src="images/nodejs.svg" alt="Node.js"></a> | <a href="https://php.net/"><img src="images/php.svg" alt="PHP"></a> | <a href="https://wordpress.org/"><img src="images/wordpress.svg" alt="WordPress"></a> | <a href="https://docker.com/"><img src="images/docker.svg" alt="Docker"></a> | <a href="https://nginx.org/"><img src="images/nginx.svg" alt="Nginx"></a></p>
+<p class="tech-images"><strong>Технологии:</strong> <a href="https://javascript.info/"><img src="images/javascript.svg" alt="JavaScript"></a> | <a href="https://vuejs.org/"><img src="images/vue.svg" alt="Vue"></a> | <a href="https://nodejs.org/"><img src="images/nodejs.svg" alt="Node.js"></a> | <a href="https://php.net/"><img src="images/php.svg" alt="PHP"></a> | <a href="https://wordpress.org/"><img src="images/wordpress.svg" alt="WordPress"></a> | <a href="https://docker.com/"><img src="images/docker.svg" alt="Docker"></a> | <a href="https://nginx.org/"><img src="images/nginx.svg" alt="Nginx"></a></p>
+<p class="tech-text"><strong>Технологии:</strong> JavaScript, Vue, Node.js, PHP, WordPress, Docker, Nginx</p>
 
 <p><strong>Опыт и ключевые достижения:</strong></p>
 
@@ -404,7 +408,8 @@
 
 <p><strong>Декабрь 2022 – Сентябрь 2023</strong></p>
 
-<p><strong>Технологии:</strong> <a href="https://python.org/"><img src="images/python.svg" alt="Python"></a> | <a href="https://javascript.info/"><img src="images/javascript.svg" alt="JavaScript"></a> | <a href="https://nodejs.org/"><img src="images/nodejs.svg" alt="Node.js"></a> | <a href="https://php.net/"><img src="images/php.svg" alt="PHP"></a> | <a href="https://wordpress.org/"><img src="images/wordpress.svg" alt="WordPress"></a> | <a href="https://docker.com/"><img src="images/docker.svg" alt="Docker"></a> | <a href="https://nginx.org/"><img src="images/nginx.svg" alt="Nginx"></a></p>
+<p class="tech-images"><strong>Технологии:</strong> <a href="https://python.org/"><img src="images/python.svg" alt="Python"></a> | <a href="https://javascript.info/"><img src="images/javascript.svg" alt="JavaScript"></a> | <a href="https://nodejs.org/"><img src="images/nodejs.svg" alt="Node.js"></a> | <a href="https://php.net/"><img src="images/php.svg" alt="PHP"></a> | <a href="https://wordpress.org/"><img src="images/wordpress.svg" alt="WordPress"></a> | <a href="https://docker.com/"><img src="images/docker.svg" alt="Docker"></a> | <a href="https://nginx.org/"><img src="images/nginx.svg" alt="Nginx"></a></p>
+<p class="tech-text"><strong>Технологии:</strong> Python, JavaScript, Node.js, PHP, WordPress, Docker, Nginx</p>
 
 <p><strong>Проекты:</strong> Разработка продуктов для автоматизации и заработка в криптосфере</p>
 
@@ -421,7 +426,8 @@
 
 <h3>Fullstack Developer • Дополнительные проекты</h3>
 
-<p><strong>Технологии:</strong> <a href="https://javascript.info/"><img src="images/javascript.svg" alt="JavaScript"></a> | <a href="https://react.dev/"><img src="images/react.svg" alt="React"></a> | <a href="https://vuejs.org/"><img src="images/vue.svg" alt="Vue"></a> | <a href="https://python.org/"><img src="images/python.svg" alt="Python"></a> | <a href="https://nodejs.org/"><img src="images/nodejs.svg" alt="Node.js"></a> | <a href="https://php.net/"><img src="images/php.svg" alt="PHP"></a> | <a href="https://wordpress.org/"><img src="images/wordpress.svg" alt="WordPress"></a> | <a href="https://docker.com/"><img src="images/docker.svg" alt="Docker"></a> | <a href="https://nginx.org/"><img src="images/nginx.svg" alt="Nginx"></a> | <a href="https://postgresql.org/"><img src="images/postgresql.svg" alt="PostgreSQL"></a> | <a href="https://telegram.org/"><img src="images/telegram.svg" alt="Telegram"></a></p>
+<p class="tech-images"><strong>Технологии:</strong> <a href="https://javascript.info/"><img src="images/javascript.svg" alt="JavaScript"></a> | <a href="https://react.dev/"><img src="images/react.svg" alt="React"></a> | <a href="https://vuejs.org/"><img src="images/vue.svg" alt="Vue"></a> | <a href="https://python.org/"><img src="images/python.svg" alt="Python"></a> | <a href="https://nodejs.org/"><img src="images/nodejs.svg" alt="Node.js"></a> | <a href="https://php.net/"><img src="images/php.svg" alt="PHP"></a> | <a href="https://wordpress.org/"><img src="images/wordpress.svg" alt="WordPress"></a> | <a href="https://docker.com/"><img src="images/docker.svg" alt="Docker"></a> | <a href="https://nginx.org/"><img src="images/nginx.svg" alt="Nginx"></a> | <a href="https://postgresql.org/"><img src="images/postgresql.svg" alt="PostgreSQL"></a> | <a href="https://telegram.org/"><img src="images/telegram.svg" alt="Telegram"></a></p>
+<p class="tech-text"><strong>Технологии:</strong> JavaScript, React, Vue, Python, Node.js, PHP, WordPress, Docker, Nginx, PostgreSQL, Telegram</p>
 
 <p><strong>Проекты:</strong> Полный спектр веб-разработки и автоматизации для клиентов</p>
 
